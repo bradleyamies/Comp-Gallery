@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+
+	<title>
+		Discover the unimaginable | KoalaTea
+	</title>
+
+	<!-- CSS Imports -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<!-- Font Imports -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" ype="image/x-icon" href="Images/favicon.ico" >
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar navbar-fixed-top">
+		<!-- Navigation Header -->
+		<div class="navbar-header">
+			<!-- Navigation Collapse Button -->
+			<button id="navArrow" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-navbar-collapsed">
+				<i class="fas fa-chevron-down"></i>
+			</button>
+			<!-- Navigation Brand -->
+			<a href="#" class="navbar-brand">
+				<i class="fas fa-camera"></i> KoalaTea
+			</a>
+		</div>
+
+		<!-- Full Sized Navigation Bar -->
+		<div class="collapse navbar-collapse" id="bs-nav-navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li title="Upload a Photo" data-placement="bottom" data-toggle="tooltip">
+					<a href="#">
+						<i class="fas fa-upload"></i> Upload a Photo
+					</a>
+				</li>
+				<li title="Sign In" data-placement="bottom" data-toggle="tooltip">
+					<a href="#" class="left-border" data-toggle="modal" data-target="#signIn">
+						<i class="fas fa-sign-in-alt"></i> 
+					</a>
+				</li>
+				<li title="Register" data-placement="bottom" data-toggle="tooltip">
+					<a href="#" data-toggle="modal" data-target="#register">
+						<i class="fas fa-user-plus"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Collapsed Navigation Bar  -->
+		<div class="collapse navbar-collapsed" id="bs-nav-navbar-collapsed">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="fas fa-upload"></i> Upload a Photo
+					</a>
+				</li>
+				<li title="Sign In">
+					<a href="#" class="top-border" data-toggle="modal" data-target="#signIn">
+						<i class="fas fa-sign-in-alt"></i> Sign In
+					</a>
+				</li>
+				<li title="Register">
+					<a href="#" data-toggle="modal" data-target="#register">
+						<i class="fas fa-user-plus"></i> Register
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Sign in Modal -->
+	<div class="modal fade" id="signIn" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="modal-body">
+					<!-- Sign in Form -->
+					<div class="col-sm-offset-3 col-sm-6">
+						<h4 class="modal-title">
+							<i class="fas fa-sign-in-alt"></i> Sign In
+						</h4>
+					</div>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Username</label>
+								<input type="text" class="form-control" id="inputUsername">
+							</div>
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Password</label>
+								<input type="password" class="form-control" id="inputPassword">
+							</div>
+						</div>
+						<div class="col-sm-offset-3 col-sm-6">
+							<p>
+								<a href="">Forgot password</a>
+							</p>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-6">
+								<button type="submit" class="btn btn-default" id="signInButton">Sign in</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<a href="" class="close" data-dismiss="modal" data-toggle="modal" data-target="#register">Not registered? Sign up here!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Large image Modal -->
+	<div class="modal fade" id="imageLarge" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="col-xs-12">
+						<img class="largeImg col-xs-12" src=""></img>
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Register Modal -->
+	<div class="modal fade" id="register" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="modal-body">
+					<!-- Sign in Form -->
+					<div class="col-sm-offset-3 col-sm-6">
+						<h4 class="modal-title">
+							<i class="fas fa-sign-in-alt"></i> Sign In
+						</h4>
+					</div>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Username</label>
+								<input type="text" class="form-control" id="inputUsername">
+							</div>
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Email</label>
+								<input type="email" class="form-control" id="inputEmail">
+							</div>
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Password</label>
+								<input type="password" class="form-control" id="inputPassword">
+							</div>
+							<div class="col-sm-offset-3 col-sm-6">
+								<label for="inputUsername" class="control-label">Confirm Password</label>
+								<input type="password" class="form-control" id="inputConfirmPassword">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-6">
+								<button type="submit" class="btn btn-default" id="signInButton">Register</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<a href="" class="close" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Already a member? Sign in here!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<div class="header">
+		<div class="header-content">
+			<div class="container">
+				<h1>
+					<i class="fas fa-paint-brush"></i> Let it Gogh 
+				</h1>
+
+				<p>
+					Range of beautiful free images from the worlds most gifted photographers.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="content">
+		<div class="container">
+			<!-- Images -->
+			<div class="row flex" id="images"></div>
+
+			<!-- Loader icon -->
+			<div class="col-xs-12" id="loader">
+				<div class="loader"></div>
+			</div>
+			
+		</div>
+	</div>
+
+</div>
+
+<!-- Scripts -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="JavaScript/script.js"></script>
+
+</body>
+</html>

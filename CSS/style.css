@@ -1,0 +1,225 @@
+/*
+	Nav Bar Styling
+*/
+
+.navbar {
+	background-color: #F2F1F0;
+	padding-left: 20px
+}
+
+.navbar-right {
+	padding-right: 20px;
+}
+
+.navbar .navbar-brand {
+	color: black;
+}
+
+.navbar .navbar-nav>li>a {
+	color: black;
+	border-bottom: 1px solid #F2F1F0;
+}
+
+.navbar .navbar-nav>li>a:hover {
+	background-color: #D9D9D9;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.8),
+				0px 4px 20px rgba(0,0,0,0.2);
+	border-radius: 2px;
+}
+
+
+.navbar-header>button[type="button"] {
+	color: black;
+	border-color: black;
+	width: 40px;
+}
+
+.navbar-nav>li .left-border {
+  border-left: 1px solid black;
+}
+
+.navbar-nav>li .top-border {
+  border-top: 1px solid black;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.navbar-toggle {
+	transition: transform 0.3s;
+}
+
+/*
+	Body Styling
+*/
+
+.header {
+	padding-top: 70px;
+	height: 350px;
+	color: #F2F1F0;
+	background: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&s=cd0aec193345638fc873c681465b7778&auto=format&fit=crop&w=1350&q=80);
+	background-size: cover;
+	background-position: center;
+}
+
+.header .header-content .container>p {
+	border-left: 3px solid #F2F1F0;
+	padding-left: 10px;
+}
+
+.header .header-content .container>h1 {
+	padding-right: 10px;
+	display: inline-block;
+	padding-bottom: 3px;
+}
+
+.header-content {
+	padding-top: 5em;
+}
+
+.content {
+	padding-top: 1%;
+	width: 100%;
+	background-color: #F2F1F0;
+}
+
+.content .container #images .thumbnail {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+	box-shadow: 0px 2px 3px grey,
+				0px 6px 8px grey;	
+}
+
+.content .container #images .divider {
+	border-top: 1px solid lightgrey;
+	padding-top: 10px;
+}
+
+
+.content .flame {
+	color: #E25822;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%;
+	animation-name: pageLoad;
+    animation-duration: 1.5s;
+}
+
+@keyframes pageLoad {
+	0% {opacity: 0};
+	100% {opacity: 1};
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sign in Modal Format*/
+
+#signIn .modal-dialog .modal-content .modal-body {
+	text-align: center;
+}
+
+#signIn .modal-dialog .modal-content .modal-footer>a {
+	font-size: 1em;
+	color: #000000;
+	font-weight: normal;
+	opacity: 0.4;
+}
+
+#signIn .modal-dialog .modal-content .modal-footer>a:hover {
+	opacity: 0.8;
+}
+
+
+#signIn .modal-dialog .modal-content .modal-body .form-control {
+	text-align: center;
+}
+
+#signIn .modal-dialog .modal-content .modal-body .modal-title {
+	margin-bottom: 10px;
+}
+
+#signIn .modal-header>button {
+	transition: transform 0.2s;
+}
+
+#signIn .modal-header>button:hover {
+	transform: rotate(90deg);
+}
+
+/* Register Modal Format*/
+
+#register .modal-dialog .modal-content .modal-body {
+	text-align: center;
+}
+
+#register .modal-dialog .modal-content .modal-footer>a {
+	font-size: 1em;
+	color: #000000;
+	font-weight: normal;
+	opacity: 0.4;
+}
+
+#register .modal-dialog .modal-content .modal-footer>a:hover {
+	opacity: 0.8;
+}
+
+
+#register .modal-dialog .modal-content .modal-body .form-control {
+	text-align: center;
+}
+
+#register .modal-dialog .modal-content .modal-body .modal-title {
+	margin-bottom: 10px;
+}
+
+#register .modal-header>button {
+	transition: transform 0.2s;
+}
+
+#register .modal-header>button:hover {
+	transform: rotate(90deg);
+}
+
+/* Large Image Format*/
+
+#imageLarge .modal-header>button {
+	transition: transform 0.2s;
+}
+
+#imageLarge .modal-header>button:hover {
+	transform: rotate(90deg);
+}
+
+#imageLarge .modal-dialog .modal-body  {
+	overflow-y: auto;
+}
+
+
+
+/* Spinner */
+#loader{
+	text-align: center;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3f3f3f;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 0.5s linear infinite;
+    margin: auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
